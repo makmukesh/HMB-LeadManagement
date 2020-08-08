@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:maxHeight="80dp"
+                    android:minHeight="80dp"
+                    android:paddingStart="00dp"
+                    android:paddingLeft="00dp"
+                    android:paddingEnd="00dp"
+                    android:paddingRight="00dp"
+                    android:theme="?attr/actionBarTheme"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetStart="0dp"
+                    app:contentInsetStartWithNavigation="0dp"
+                    app:theme="@style/ToolBarStyle">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/img_nav_back"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_back" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/logo"/>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+                            <ru.nikartm.support.ImageBadgeView
+                                android:id="@+id/mukesh_begview"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                app:ibv_badgeColor="@android:color/holo_red_dark"
+                                app:ibv_badgeLimitValue="false"
+                                app:ibv_badgePosition="top_right"
+                                app:ibv_badgeTextColor="#ffffff"
+                                app:ibv_badgeTextSize="8sp"
+                                app:ibv_badgeTextStyle="bold"
+                                app:ibv_badgeValue="0"
+                                app:ibv_fixedBadgeRadius="7dp"
+                                app:srcCompat="@drawable/ic_notification" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_rectangle_top_rounded"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Success !"
+                android:textAllCaps="true"
+                android:textColor="@color/color_black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_icon_mobile"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_no_image"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/successful_check" />
+
+            <TextView
+                android:id="@+id/txt_lead_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Lead ID : 131351"
+                android:textAllCaps="true"
+                android:textColor="@color/color_black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Your Lead is successfully transfer to staff id : 3145"
+                android:textAllCaps="false"
+                android:textColor="@color/color_black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txt_go_home"
+                android:layout_width="130dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_button"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Go Home"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

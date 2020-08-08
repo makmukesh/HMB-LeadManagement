@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">HMB Staff</string>
+
+    <string name="default_notification_channel_id">10001</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="txt_networkAlert">No Network Connectivity</string>
+
+    <!--Strings Related to InputType Digits-->
+    <string name="alphanumeric">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</string>
+    <string name="numberic">0123456789</string>
+
+    <string name="error_required_user_id">Please Enter Mobile No.</string>
+    <string name="error_required_password">Please Enter Password.</string>
+    <!--Strings Related to Forgot Password-->
+    <string name="btn_submit">Submit</string>
+    <string name="note">Note :</string>
+    <string name="note_detail">1 ) Your password will be sent on your registered mobile number. \n2 ) If you don\'t receive SMS within one hour please contact our support.</string>
+    <string name="click_here_to_login">Click Here to Login.</string>
+    <!-- logout message -->
+    <string name="txt_signout_message">Are you sure you want to logout ?</string>
+    <string name="txt_signout_yes">Yes</string>
+    <string name="txt_signout_no">No</string>
+    <string-array name = "spinner_selectlead_status">
+        <item>Select Lead Status</item>
+        <item>Closed</item>
+        <item>Semi Closed</item>
+        <item>Rejected</item>
+    </string-array>
+    <string-array name = "select_staff_list">
+        <item>Select Staff Member</item>
+    </string-array>
+
+</resources>

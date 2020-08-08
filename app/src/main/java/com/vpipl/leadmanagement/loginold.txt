@@ -1,0 +1,77 @@
+package com.vpipl.leadmanagement;
+
+import android.animation.Animator;
+import android.animation.ValueAnimator;
+import android.app.Activity;
+import android.os.Bundle;
+import android.os.Handler;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
+
+import com.airbnb.lottie.LottieAnimationView;
+
+public class Login_Activity extends Activity {
+
+    LottieAnimationView mAddedToCartAnimation, lottieCatThrowsCup;
+    EditText edtxt_password;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+
+        mAddedToCartAnimation = findViewById(R.id.lottie_animation_ribbon_and_confetti);
+        lottieCatThrowsCup = findViewById(R.id.lottie_cat_throws_cup);
+        edtxt_password = findViewById(R.id.edtxt_password);
+
+        mAddedToCartAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // hide password
+                mAddedToCartAnimation.playAnimation();
+                mAddedToCartAnimation.setRepeatCount(1);
+                edtxt_password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                mAddedToCartAnimation.setVisibility(View.GONE);
+                lottieCatThrowsCup.setVisibility(View.VISIBLE);
+            }
+        });
+        lottieCatThrowsCup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // show password
+                lottieCatThrowsCup.playAnimation();
+                lottieCatThrowsCup.setRepeatCount(1);
+                edtxt_password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                mAddedToCartAnimation.setVisibility(View.VISIBLE);
+                lottieCatThrowsCup.setVisibility(View.GONE);
+            }
+        });
+       /* mAddedToCartAnimation.addAnimatorListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+                Log.e("Animation:", "start");
+                lottieCatThrowsCup.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                Log.e("Animation:", "end");
+                lottieCatThrowsCup.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation) {
+                Log.e("Animation:", "cancel");
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+                Log.e("Animation:", "repeat");
+            }
+        });*/
+    }
+
+}

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "532381267489",
+    "firebase_url": "https://lead-management-hmb.firebaseio.com",
+    "project_id": "lead-management-hmb",
+    "storage_bucket": "lead-management-hmb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532381267489:android:860e6b10fe252bcd425560",
+        "android_client_info": {
+          "package_name": "com.vpipl.leadmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532381267489-27tchf62kpjgnmem013oqrjl90eg5d8v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vpipl.leadmanagement",
+            "certificate_hash": "fb76880b3fdebf1d95967f05ee3f768ace08e109"
+          }
+        },
+        {
+          "client_id": "532381267489-njk5j0579menvb3vbpc7e2if04surunh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBuQSOOaoPBn0OmDAM8LCSlzQ0D5QEGcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532381267489-njk5j0579menvb3vbpc7e2if04surunh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
